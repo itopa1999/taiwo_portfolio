@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Taiwo Aderonke</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+ 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90%;
+  box-sizing: border-box;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Image */
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  border-radius: 8px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive: improve layout for very small screens */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 8px;
+    width: 95%;
+    max-height: 85%;
+  }
+
+  .close-btn {
+    font-size: 22px;
+    top: 5px;
+    right: 10px;
+  }
+
+  .modal-image {
+    max-height: 60vh;
+  }
+}
+
+
+  </style>
+</head>
+
+<body class="index-page">
+  <div class="scroll-progress"></div>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename"> 📝</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Taiwo</span>
+          <span class="title-line">Aderonke</span>
+        </h1>
+        
+        <div class="typed-container">
+          <span class="typed" data-typed-items="Virtual Assistant, Social Media Manager, Branding Strategist, Content Creator"></span>
+          <span class="typed-cursor"></span>
+        </div>
+
+        <div class="hero-intro">
+          Hi There! <br>
+          <p class="lead-text">
+            Your time spent exploring my work means a lot, perhaps we're on the verge of working together! 😅
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://x.com/taiwoaderonke6?s=21&t=SY3TdiRKEHQx3a7H9oGxdw" class="social-icon" data-aos="zoom-in" data-aos-delay="200">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://wa.me/2348130635045" class="social-icon" data-aos="zoom-in" data-aos-delay="300">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/taiwoade_?igsh=MXFwazB2NHNhMXczZQ%3D%3D&utm_source=qr" class="social-icon" data-aos="zoom-in" data-aos-delay="400">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/taiwo-yusuf-1b85211b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" data-aos="zoom-in" data-aos-delay="500">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Hero Section -->
+    <!-- <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+        <h2>Taiwo Aderonke</h2>
+        <p><span class="typed" data-typed-items="Virtual Assistant, Social Media Manager, Branding and Communication">Writer</span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <div class="social-links">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-whatsapp"></i></a>
+          <a href=""></i></a>
+          <a href="https://www.linkedin.com/in/taiwo-yusuf-1b85211b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+            <i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <h4 class="mt-5 col-lg-8 intro">
+          Hi there, <br>
+
+         <p class="mt-3 intro">
+          Your time spent exploring my work means a lot, perhaps we're on the verge of working together! 😅
+        </p>
+        <h4>
+      </div>
+
+    </section> -->
+
+  </main>
+  <main class="main" id="about">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1> Get to Know Me.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Virtual Assistant, Social Media Manager &amp; LinkedIn Expert</h2>
+            <div class="row mt-4">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+234 8130635045</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Lagos, Nigeria</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>taiwoaderonke120@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    
+
+    <!-- Interests Section -->
+    <section id="interests" class="interests section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <div><span>My</span> <span class="description-title">Expertise</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4"> 
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #ffbb2c;"></i>
+              <h3><a href="#!" class="stretched-link">Content Writing</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #e80368;"></i>
+              <h3><a href="#!" class="stretched-link">Virtual Assistant</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #5578ff;"></i>
+              <h3><a href="#!" class="stretched-link">Social Media Management</a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #e80368;"></i>
+              <h3><a href="#!" class="stretched-link">LinkedIn Expert </a></h3>
+            </div>
+          </div><!-- End Feature Item -->
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-infinity" style="color: #ffbb2c;"></i>
+              <h3><a href="#!" class="stretched-link">Branding and Content Strategist </a></h3>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section>
+    
+  </main>
+  <main class="main">
+
+
+  <main class="main" id="service">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>  Explore my expertise</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-pencil"></i>
+              </div>
+                <h3>Content Writing</h3>
+                <p>
+                  I write to create impact, build brands, and make stories come alive.
+
+                  I mold ideas into engaging stories that not only captivate but also inspire and inform your target audience.
+                </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-pencil"></i>
+              </div>
+                <h3>LinkedIn expert</h3>
+              <p>
+                I work with businesses and professionals to create compelling LinkedIn content that boosts engagement, 
+                strengthens their brand, and amplifies their visibility.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-pencil"></i>
+              </div>
+                <h3>social media management </h3>
+              <p>
+                  I help brands grow their online presence through strategic social media management, creating engaging content, 
+                  driving community interaction, and building a strong, consistent brand voice.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-pencil"></i>
+              </div>
+                <h3> Virtual Assistant</h3>
+              <p>
+                I support businesses and busy professionals by providing reliable virtual assistance services, helping them stay organized,
+                 manage tasks efficiently, and focus on growth.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+  </main>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1> Selected Work and <br> Projects.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content ">
+                <img src="assets/img/portfolio/Article1.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 1</h4>
+                  <a href="assets/img/portfolio/Article1.jpeg" title="Article" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.linkedin.com/posts/dotunes-shothis-4a9160125_healthawareness-cinematography-creativemarketing-activity-7242432370325245952-GE_d?utm_source=share&utm_medium=member_ios&rcm=ACoAADEy5dwB5MTs2BIxNvhKdyXX8gI7ordnrFA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <p>Content Writing (Writerslife Activity)</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content ">
+                <img src="assets/img/portfolio/Article2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 2</h4>
+                  <a href="assets/img/portfolio/Article2.jpg" title="Article" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.linkedin.com/posts/moses-joshua_techcareers-agile-projectmanagement-activity-7308056570590855169-KHS1?utm_source=share&utm_medium=member_ios&rcm=ACoAADEy5dwB5MTs2BIxNvhKdyXX8gI7ordnrFA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <p>Health is Wealth</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content">
+                <img src="assets/img/portfolio/Article3.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 3</h4>
+                  <a href="assets/img/portfolio/Article3.jpeg" title="Article" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.instagram.com/kloverharris?igsh=cWpsazMzZWVkcGpi&utm_source=qr" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Rare Blood Disease you need to know</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content ">
+                <img src="assets/img/portfolio/Article6.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 4</h4>
+                  <a href="assets/img/portfolio/Article6.jpeg" title="Article" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.linkedin.com/posts/hussein-kehinde-babalola-808ab715a_leadership-community-design-activity-7285937008667992064-R4T9?utm_source=share&utm_medium=member_ios&rcm=ACoAADEy5dwB5MTs2BIxNvhKdyXX8gI7ordnrFA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Story Telling</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content ">
+                <img src="assets/img/portfolio/Article5.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 5</h4>
+                  <a href="assets/img/portfolio/Article5.jpeg" title="Article" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://www.linkedin.com/posts/taiwo-yusuf-_contentwriting-socialmediastrategy-linkedinbranding-activity-7320363286149971968-p1Fy?utm_source=share&utm_medium=member_ios&rcm=ACoAADEy5dwB5MTs2BIxNvhKdyXX8gI7ordnrFA" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>Imposter Syndrome</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content ">
+                <img src="assets/img/portfolio/Article4.jpeg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Article 6</h4>
+                  <a href="assets/img/portfolio/Article4.jpeg" title="Article" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://docs.google.com/spreadsheets/d/1nf129r6YYjiOWHrCRKxcDBO_G1TaOu76XcKjVRJCSiI/edit?usp=drivesdk" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p>When am i too late for a dental appointment</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+ 
+  </main>
+
+  
+  <main class="main" id="contact">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>Let's Talk</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Lagos, Nigeria</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+234 8130635045</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>taiwoaderonke120@gmail.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="https://x.com/taiwoaderonke6?s=21&t=SY3TdiRKEHQx3a7H9oGxdw"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://wa.me/2348130635045"><i class="bi bi-whatsapp"></i></a>
+                  <a href="https://www.instagram.com/taiwoade_?igsh=MXFwazB2NHNhMXczZQ%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/taiwo-yusuf-1b85211b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                    <i class="bi bi-linkedin"></i></a>
+                        </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+     
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-content banner-update">
+      <span class="close-btn">&times;</span>
+      <img id="randomImage" class="modal-image" alt="Image">
+    </div>
+  </div>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container">
+      <h4 class="sitename">I want to work with you! Let’s turn your ideas into words that work.</h4>
+      <div class="social-links d-flex justify-content-center">
+          <a href="https://x.com/taiwoaderonke6?s=21&t=SY3TdiRKEHQx3a7H9oGxdw"><i class="bi bi-twitter-x"></i></a>
+          <a href="https://wa.me/2348130635045"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/taiwoade_?igsh=MXFwazB2NHNhMXczZQ%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/taiwo-yusuf-1b85211b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+            <i class="bi bi-linkedin"></i></a>
+    </div>
+      <div class="container">
+        <div class="credits">
+          Designed by <a href="#">StarLiteCodev</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+   
+window.addEventListener('scroll', () => {
+  const progressBar = document.querySelector('.scroll-progress');
+  const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = (window.scrollY / windowHeight) * 100;
+  progressBar.style.width = `${scrolled}%`;
+});
+  </script>
+
+    <script>
+    // Array of image paths (replace with your actual image paths)
+    const images = [
+      'assets/img/modal.jpeg',
+      'assets/img/modal1.jpeg',
+    ];
+    
+    // Randomly select an image
+    function showRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      const modal = document.getElementById('imageModal');
+      const imgElement = document.getElementById('randomImage');
+      
+      imgElement.src = images[randomIndex];
+      modal.style.display = 'flex';
+
+    setTimeout(() => {
+      modal.style.display = 'none';
+    }, 6000); // 6000ms = 6 seconds delay
+  }
+    
+    // Close modal functionality
+    document.querySelector('.close-btn').addEventListener('click', () => {
+      document.getElementById('imageModal').style.display = 'none';
+    });
+    
+    // Close when clicking outside image
+    window.addEventListener('click', (event) => {
+      const modal = document.getElementById('imageModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+    
+    window.addEventListener('load', () => {
+      setTimeout(showRandomImage, 3000); 
+    });
+  </script>
+
+
+</body>
+
+</html>
