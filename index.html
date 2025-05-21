@@ -69,11 +69,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-            <h2><span>I'm </span><span class="underlight">Taiwo Aderonke</span>  <br>a Professional<span> at Virtual Assistant, Social Media Manager, Branding Strategist, Content Creator</span></h2>
-            <p>
-              Hi There! <br>
-              Your time spent exploring my work means a lot, perhaps we're on the verge of working together! 😅
-            </p>
+            <!-- <h2><span>I'm </span><span class="underlight">Taiwo Aderonke</span>  <br>a Professional<span> at Virtual Assistant, Social Media Manager, Branding Strategist, Content Creator</span></h2> -->
+            <h2 id="typewriter">
+            </h2>
+            <h4>
+              Hi There! <br><br>
+              Your time spent exploring my work means a lot, perhaps we're on the verge of working together!
+            </h4> <br>
             <a href="#contact" class="btn-get-started">Available for Hire<br></a>
           </div>
         </div>
@@ -114,11 +116,6 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>taiwoaderonke120@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
-                <p>
-                  I’m Taiwo Aderonke, a results-driven Virtual Assistant and Social Media Manager with a passion for building impactful brands through strategic content creation and digital presence. With a proven ability to streamline workflows, boost engagement, and align visual identity with brand goals, I help entrepreneurs and businesses grow with clarity and consistency.
-
-Whether it's crafting compelling content, managing your online presence, or developing brand strategies that resonate, I bring creativity, precision, and dedication to every project.
-                </p>
               </div>
             </div>
           </div>
@@ -484,7 +481,46 @@ Whether it's crafting compelling content, managing your online presence, or deve
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  const roles = [
+    "Branding Strategist",
+    "Social Media Manager",
+    "Virtual Assistant"
+  ];
 
+  const typewriterElement = document.getElementById("typewriter");
+  let roleIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  function type() {
+    const currentRole = roles[roleIndex];
+    const displayedText = currentRole.substring(0, charIndex);
+    typewriterElement.textContent = displayedText;
+
+    if (!isDeleting) {
+      if (charIndex < currentRole.length) {
+        charIndex++;
+      } else {
+        isDeleting = true;
+        setTimeout(type, 2000); // Wait before deleting
+        return;
+      }
+    } else {
+      if (charIndex > 0) {
+        charIndex--;
+      } else {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+      }
+    }
+
+    setTimeout(type, isDeleting ? 50 : 100); // Typing & deleting speed
+  }
+
+  // Start the effect
+  type();
+</script>
 </body>
 
 </html>
